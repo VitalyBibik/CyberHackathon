@@ -1,0 +1,19 @@
+.section-title {
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  line-height: 61px;
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.section-title:first-child {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 550px) {
+  .section-title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
