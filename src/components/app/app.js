@@ -1,7 +1,6 @@
-import styles from './app.module.css';
+import styles from './app.module.scss';
 import Root from '../root/root';
 import React from 'react';
-import Footer from '../footer';
 import { config } from '../../config';
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
             <Root />
         </div>
       </div>
-      <Footer config={config} />
     </div>
   );
 }
