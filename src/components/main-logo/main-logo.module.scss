@@ -1,0 +1,25 @@
+$maxW: 580px; // max-width
+$fSize: 86px; // font-size
+$lHw:1; // line-height
+$color:#333333;
+$clrM:0; // clear margin
+
+.main-logo {
+  position: relative;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  max-width: $maxW;
+  font-size: $fSize;
+  line-height: $lHw;
+  color:$color;
+  border-bottom: 5px solid $color;
+  border-top: 5px solid $color;
+  margin: $clrM;
+
+}
+.number-icon{
+  position: absolute;
+  right: 0;
+  margin-right: 1%;
+  bottom: 1px;
+}

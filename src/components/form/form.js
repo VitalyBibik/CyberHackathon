@@ -1,6 +1,6 @@
 import React from 'react';
 import { Field, Formik } from 'formik';
-import styles from './form.module.css';
+import styles from './form.module.scss';
 import { CreateAndValidate } from '../../utils/validation';
 
 

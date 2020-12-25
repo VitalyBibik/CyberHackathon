@@ -1,14 +1,14 @@
 import styles from './app.module.scss';
 import Root from '../root/root';
 import React from 'react';
-import { config } from '../../config';
+import cn from 'classnames';
 
 function App() {
 
   return (
-    <div className={styles['app']}>
-      <div className={styles['page']}>
-        <div className={styles['page__container']}>
+    <div className={cn(styles['app'])}>
+      <div className={cn(styles['page'])}>
+        <div className={cn(styles['page__container'])}>
             <Root />
         </div>
       </div>

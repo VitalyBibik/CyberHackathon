@@ -1,0 +1,24 @@
+$btnColor:#5D09BB;
+$btnW:580px;
+$btnH:60px;
+$tColor:#FFF;
+.button {
+  width: $btnW;
+  height: $btnH;
+  color:$tColor;
+  background: $btnColor;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  border: none;
+
+    &__text {
+      text-align: center;
+   }
+   &__icon {
+     margin-right: 10px;
+     position: relative;
+     top:2px;
+   }
+}

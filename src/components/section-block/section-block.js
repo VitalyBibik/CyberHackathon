@@ -1,15 +1,13 @@
-import styles from './section-block.module.css';
-import SectionTitle from '../section-title/section-title';
+import styles from './section-block.module.scss';
 import SectionText from '../section-text/section-text';
-import SectionTezis from '../section-tezis/section-tezis';
 import React from 'react';
+import cn from 'classnames';
 
 function SectionBlock({ sectionBlock }) {
   return (
     <>
       {sectionBlock.mainText.map((item) => (
-        <div className={styles['section-block']} key={item.id}>
-          <SectionTitle title={item.title} />
+        <div className={cn(styles['section-block'])} key={item.id}>
           {item.text.length > 1 ? (
             item.text.map((item, index) => (
               <SectionText text={item} key={index} />
@@ -19,10 +17,6 @@ function SectionBlock({ sectionBlock }) {
           )}
         </div>
       ))}
-      <div className={styles['section-block']}>
-        <SectionTitle title={sectionBlock.tezisText[0].title} />
-        <SectionTezis text={sectionBlock.tezisText} />
-      </div>
     </>
   );
 }

@@ -1,7 +1,8 @@
-import styles from './section-text.module.css';
+import styles from './section-text.module.scss';
+import cn from 'classnames';
 
 const SectionText = ({ text }) => (
-  <p className={styles['section-text']}>{text}</p>
+  <p className={cn(styles['section-text'])}>{text}</p>
 );
 
 export default SectionText;
