@@ -8,7 +8,7 @@ import MainLogo from '../../main-logo/main-logo';
 import Button from '../../../ui/button';
 import SvgPlus from '../../svg-icons/svg-plus';
 import CheckBoxItem from '../../option-box/option-box';
-import { Route, Link, useRouteMatch, Switch } from 'react-router-dom';
+import { Route, useRouteMatch } from 'react-router-dom';
 import SectionVoice from '../section-voice';
 
 function Root() {

@@ -11,7 +11,7 @@ function App() {
       <div className={cn(styles['page'])}>
         <div className={cn(styles['page__container'])}>
           <Switch>
-            <Route exact path="/CyberHackathon">
+            <Route path="/CyberHackathon">
               <Root />
             </Route>
             <Route path="*">
