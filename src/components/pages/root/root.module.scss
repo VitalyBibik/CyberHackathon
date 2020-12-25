@@ -1,0 +1,9 @@
+$maxW: 550px;
+
+.root {
+}
+
+@media screen AND (max-width: $maxW) {
+  .root {
+  }
+}

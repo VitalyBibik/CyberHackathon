@@ -31,10 +31,15 @@ const mainPageText = {
   logoText: [
     {
       id: 1,
-      title: 'Гражданин Поэт'
+      title: 'Гражданин Поэт',
     },
   ],
-
+  titleText: [
+    {
+      id: 1,
+      title: 'Новое обращение',
+    },
+  ],
 };
 
 export { mainPageText };
