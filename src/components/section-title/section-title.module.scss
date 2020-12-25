@@ -8,12 +8,9 @@ $Main-Font: Euclid Circular B;
   font-size: 85px;
   line-height: 80px;
   font-weight: 600;
-  color: $main-color;
-  margin-bottom: 40px;
-}
-
-.section-title:first-child {
-  margin-top: 40px;
+  color: $Text-color;
+  text-align: center;
+  margin: 0;
 }
 
 @media screen and (max-width: $maxWh) {

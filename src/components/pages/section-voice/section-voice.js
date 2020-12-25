@@ -1,17 +1,15 @@
 import styles from './section-voice.module.scss';
 import React from 'react';
-import SectionBlock from '../../section-block/section-block';
-import { buttonText } from '../../../buttonText';
-import Button from '../../../ui/button';
-import SvgPlus from '../../svg-icons/svg-plus';
 import SectionTitle from '../../section-title';
+import Button from "../../../ui/button";
+import SvgMicro from "../../svg-icons/svg-micro";
 
-function SectionVoice({ mainPageText }) {
-  console.log('SectVoice', mainPageText);
+function SectionVoice({sectionVoice, buttonText}) {
   return (
-    <div>
-      <SectionTitle title={mainPageText} />
-    </div>
+      <>
+        <SectionTitle title={sectionVoice.titleText[0].title}/>
+        <Button button={buttonText.mainButton[1]} icon={SvgMicro}/>
+      </>
   );
 }
 

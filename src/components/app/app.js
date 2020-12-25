@@ -4,6 +4,9 @@ import React from 'react';
 import cn from 'classnames';
 import { Route, Link, Switch } from 'react-router-dom';
 import PageNotFound from '../pages/page-not-found';
+import SectionVoice from "../pages/section-voice";
+import { mainPageText } from "../../fixtures";
+import { buttonText } from '../../buttonText';
 
 function App() {
   return (
@@ -11,8 +14,11 @@ function App() {
       <div className={cn(styles['page'])}>
         <div className={cn(styles['page__container'])}>
           <Switch>
-            <Route path="/CyberHackathon">
-              <Root />
+            <Route exact path="/CyberHackathon">
+              <Root root={mainPageText} buttonText={buttonText}/>
+            </Route>
+            <Route exact path={`/NewVoice`}>
+              <SectionVoice sectionVoice={mainPageText} buttonText={buttonText} />
             </Route>
             <Route path="*">
               <PageNotFound />
