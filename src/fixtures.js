@@ -39,6 +39,10 @@ const mainPageText = {
       id: 1,
       title: 'Новое обращение',
     },
+    {
+      id: 2,
+      title: 'Замена слова',
+    },
   ],
 };
 
