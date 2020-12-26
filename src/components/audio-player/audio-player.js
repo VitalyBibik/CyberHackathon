@@ -4,9 +4,10 @@ import styles from './audio-player.module.css';
 import ctm from '../../utils/convert-to-minutes';
 import throttling from '../../utils/throttling';
 import PlayerTimeline from '../sound-timeline';
+import Button from '../../ui/button';
+import SvgMicro from '../svg-icons/svg-micro';
 
-function SoundPlayer({ onClick, togglePlay }) {
-
+function SoundPlayer({ onClick, togglePlay, buttonText }) {
   const [isPlaying, setIsPlaying] = useState(false); // play or pause
   const myPlayer = useRef(null);
   const [currentTime, setCurrentTime] = useState(0); //  time song
@@ -27,7 +28,7 @@ function SoundPlayer({ onClick, togglePlay }) {
   };
 
   return (
-      <>
+    <>
       <div className={cn(styles['player'], styles['player-is_open'])}>
         <span
           onClick={(_) => {
@@ -44,23 +45,18 @@ function SoundPlayer({ onClick, togglePlay }) {
           }}
           className={cn(styles['icon'], styles['icon_block_controls'])}
         >
-          {isPlaying ? (
-            'pause'
-          ) : (
-           'play'
-          )}
+          {isPlaying ? 'pause' : 'play'}
         </span>
-
-          </div>
-          <PlayerTimeline
-            currentTime={currentTime}
-            duration={duration}
-            onClick={(time) => {
-              myPlayer.current.currentTime = time;
-            }}
-          />
-
-      </>
+      </div>
+      <PlayerTimeline
+        currentTime={currentTime}
+        duration={duration}
+        onClick={(time) => {
+          myPlayer.current.currentTime = time;
+        }}
+      />
+      <Button button={buttonText.mainButton[1]} icon={SvgMicro} />
+    </>
   );
 }
 
