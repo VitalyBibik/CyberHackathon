@@ -6,6 +6,7 @@ import throttling from '../../utils/throttling';
 import PlayerTimeline from '../sound-timeline';
 import Button from '../../ui/button';
 import SvgMicro from '../svg-icons/svg-micro';
+import SvgPause from '../svg-icons/svg-pause';
 
 function SoundPlayer({ onClick, togglePlay, buttonText }) {
   const [isPlaying, setIsPlaying] = useState(false); // play or pause
@@ -14,6 +15,10 @@ function SoundPlayer({ onClick, togglePlay, buttonText }) {
   const [duration, setDuration] = useState(0);
 
   const canPlay = useRef(false);
+
+  const ButtonColor = {
+    RColor: true,
+  };
 
   const onTimeUpdate = throttling((e) => {
     setCurrentTime(e.target.currentTime);
@@ -56,6 +61,11 @@ function SoundPlayer({ onClick, togglePlay, buttonText }) {
         }}
       />
       <Button button={buttonText.mainButton[1]} icon={SvgMicro} />
+      <Button
+        button={buttonText.mainButton[2]}
+        icon={SvgPause}
+        color={ButtonColor}
+      />
     </>
   );
 }

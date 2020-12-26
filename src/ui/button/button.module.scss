@@ -1,11 +1,12 @@
-$btnColor:#5D09BB;
-$btnW:580px;
-$btnH:60px;
-$tColor:#FFF;
+$btnColor: #5d09bb;
+$btnStopColor: #eb5757;
+$btnW: 580px;
+$btnH: 60px;
+$tColor: #fff;
 .button {
   width: $btnW;
   height: $btnH;
-  color:$tColor;
+  color: $tColor;
   background: $btnColor;
   border-radius: 10px;
   font-weight: 600;
@@ -13,12 +14,15 @@ $tColor:#FFF;
   line-height: 20px;
   border: none;
 
-    &__text {
-      text-align: center;
-   }
-   &__icon {
-     margin-right: 10px;
-     position: relative;
-     top:2px;
-   }
+  &__text {
+    text-align: center;
+  }
+  &__icon {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+  }
+  &_color_red {
+    background-color: $btnStopColor;
+  }
 }
