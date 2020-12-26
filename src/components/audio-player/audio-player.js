@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import cn from 'classnames';
 import styles from './audio-player.module.scss';
-import ctm from '../../utils/convert-to-minutes';
 import throttling from '../../utils/throttling';
 import PlayerTimeline from '../sound-timeline';
 import Button from '../../ui/button';
@@ -32,6 +31,19 @@ function SoundPlayer({ onClick, togglePlay, buttonText }) {
     canPlay.current = false;
   };
 
+  const buttonPlay = () => {
+    return <Button button={buttonText.mainButton[1]} icon={SvgMicro} />;
+  };
+  const buttonStop = () => {
+    return (
+      <Button
+        button={buttonText.mainButton[2]}
+        icon={SvgPause}
+        color={ButtonColor}
+      />
+    );
+  };
+
   return (
     <>
       <div className={cn(styles['player'], styles['player-is_open'])}>
@@ -49,9 +61,7 @@ function SoundPlayer({ onClick, togglePlay, buttonText }) {
             }
           }}
           className={cn(styles['icon'], styles['icon_block_controls'])}
-        >
-          {isPlaying ? 'pause' : 'play'}
-        </span>
+        />
       </div>
       <PlayerTimeline
         currentTime={currentTime}
@@ -60,12 +70,7 @@ function SoundPlayer({ onClick, togglePlay, buttonText }) {
           myPlayer.current.currentTime = time;
         }}
       />
-      <Button button={buttonText.mainButton[1]} icon={SvgMicro} />
-      <Button
-        button={buttonText.mainButton[2]}
-        icon={SvgPause}
-        color={ButtonColor}
-      />
+      {!isPlaying ? buttonPlay() : buttonStop()}
     </>
   );
 }
