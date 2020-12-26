@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import cn from 'classnames';
-import styles from './audio-player.module.css';
+import styles from './audio-player.module.scss';
 import ctm from '../../utils/convert-to-minutes';
 import throttling from '../../utils/throttling';
 import PlayerTimeline from '../sound-timeline';
