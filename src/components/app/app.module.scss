@@ -1,5 +1,5 @@
-$font-stack:Inter, Helvetica, Arial, sans-serif;
-$maxW:580px;
+$font-stack: Inter, Helvetica, Arial, sans-serif;
+$maxW: 585px;
 
 .app {
   position: relative;
@@ -9,15 +9,14 @@ $maxW:580px;
   margin: 0 auto;
   z-index: 0;
 }
- .page {
+.page {
   margin: 0 auto;
   max-width: 1440px;
-   &__container {
-     padding-top: 120px;
-     position: relative;
-     z-index: 2;
-     max-width: $maxW;
-     margin: 0 auto;
-   }
+  &__container {
+    padding-top: 120px;
+    position: relative;
+    z-index: 2;
+    max-width: $maxW;
+    margin: 0 auto;
+  }
 }
-

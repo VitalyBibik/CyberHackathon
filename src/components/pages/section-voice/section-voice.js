@@ -11,7 +11,7 @@ function SectionVoice({ sectionVoice, buttonText }) {
     return (
       <>
         <SectionTitle title={sectionVoice.titleText[1].title} />
-        <h3 className={cn(styles)}>{word}</h3>
+        <h3 className={cn(styles['special-word'])}>{`'${word}'`}</h3>
       </>
     );
   };
