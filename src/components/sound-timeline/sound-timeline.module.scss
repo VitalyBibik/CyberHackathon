@@ -1,0 +1,19 @@
+.seekbar {
+  clear: both;
+  cursor: pointer;
+  padding: 0;
+  background-color: #CBCBCB;
+
+  overflow: hidden;
+  height: 2px;
+  width: 100%;
+  margin-top: 276px;
+  margin-bottom: 276px;
+
+&__progress {
+  background-color: #333;
+  height: 100%;
+  width: 0;
+}
+}
+
