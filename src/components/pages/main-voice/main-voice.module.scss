@@ -1,0 +1,17 @@
+.main {
+  font-family: sans-serif, Euclid Circular B;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 15px;
+  &__words {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &:last-of-type {
+    margin-bottom: 140px;
+  }
+  &:first-of-type {
+    margin-top: 81px;
+  }
+}
