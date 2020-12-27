@@ -43,12 +43,8 @@ function SoundPlayer({ onClick, togglePlay, buttonText }) {
       />
     );
   };
-
-  return (
-    <>
-      <div className={cn(styles['player'], styles['player-is_open'])}>
-        <span
-          onClick={(_) => {
+  /*  Управление кнпокой
+       onClick={(_) => {
             if (isPlaying) {
               myPlayer.current.pause();
               setIsPlaying(false);
@@ -60,9 +56,10 @@ function SoundPlayer({ onClick, togglePlay, buttonText }) {
               togglePlay(isPlaying);
             }
           }}
-          className={cn(styles['icon'], styles['icon_block_controls'])}
-        />
-      </div>
+   */
+
+  return (
+    <>
       <PlayerTimeline
         currentTime={currentTime}
         duration={duration}
