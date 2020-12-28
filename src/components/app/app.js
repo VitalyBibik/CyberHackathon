@@ -19,16 +19,16 @@ function App() {
             <Route exact path="/CyberHackathon">
               <Root root={mainPageText} buttonText={buttonText} />
             </Route>
-            <Route exact path="/NewVoice">
+            <Route exact path="/CyberHackathon/NewVoice">
               <SectionVoice
                 sectionVoice={mainPageText}
                 buttonText={buttonText}
               />
             </Route>
-            <Route exact path="/MainVoice">
+            <Route exact path="/CyberHackathon/MainVoice">
               <MainVoice mainVoice={mainPageText} buttonText={buttonText} />
             </Route>
-            <Route exact path="/FeedBack">
+            <Route exact path="/CyberHackathon/FeedBack">
               <Feedback feedBack={mainPageText} buttonText={buttonText} />
             </Route>
             <Route path="*">
