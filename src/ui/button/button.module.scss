@@ -29,4 +29,10 @@ $tColor: #fff;
   &_color_red {
     background-color: $btnStopColor;
   }
+  &:hover {
+    background-color: #881eff;
+  }
+  :active {
+    background-color: #46058f;
+  }
 }
