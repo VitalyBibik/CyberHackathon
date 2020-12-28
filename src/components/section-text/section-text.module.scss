@@ -1,21 +1,22 @@
-$font:Inter, Helvetica, Arial, sans-serif;
-$main-color:#A6A6A6;
-$maxWh:550px;
+$font: Inter, Helvetica, Arial, sans-serif;
+$main-color: #a6a6a6;
+$maxWhS: 550px;
 
 .section-text {
-  font-family:$font;
+  font-family: $font;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: $main-color;
   margin-bottom: 30px;
+  max-width: 580px;
 
   &:last-child {
     margin-bottom: 222px;
   }
 }
 
-@media screen and (max-width: $maxWh) {
+@media screen and (max-width: $maxWhS) {
   .section-text {
     font-size: 12px;
     line-height: 16px;
