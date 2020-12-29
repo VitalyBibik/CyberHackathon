@@ -13,7 +13,7 @@ function PageNotFound() {
       <p className="not-found__text">
         Лучше 404 с кнопкой «Назад», чем журавль в небе.
       </p>
-      <Link className="button button_type_to-main" to="/CyberHackathon">
+      <Link className="button button_type_to-main" to="/">
         Try Main Page
       </Link>
     </div>
