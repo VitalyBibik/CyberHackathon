@@ -1,8 +1,8 @@
-$maxWh:550px;
-$main-color:#A6A6A6;
-$fMain:sans-serif, Euclid Circular B;
-$checkedCol:#881EFF;
-$pressed:#46058F;
+$maxWh: 550px;
+$main-color: #a6a6a6;
+$fMain: sans-serif, Euclid Circular B;
+$checkedCol: #881eff;
+$pressed: #46058f;
 
 .option-box {
   font-family: $fMain;
@@ -18,17 +18,16 @@ $pressed:#46058F;
 
   &:hover > .small-span {
     border: 2px solid #000000;
-    transition-duration: .3s;
+    //transition-duration: .3s;
   }
   &:hover > .checkmark {
-    transition-duration: .3s;
+    //transition-duration: .3s;
     color: black;
   }
   &:active > .small-span {
     border: 2px solid $pressed;
-    transition-duration: .3s;
+    // transition-duration: .3s;
   }
-
 }
 .checkbox {
   background-color: $main-color;
@@ -37,14 +36,13 @@ $pressed:#46058F;
   height: 0;
   overflow: hidden;
 
-  &:checked + .small-span{
-    border:2px solid $checkedCol;
+  &:checked + .small-span {
+    border: 2px solid $checkedCol;
     background-image: url('./Active.svg');
     background-position: center;
     background-repeat: no-repeat;
-    color:$checkedCol;
+    color: $checkedCol;
   }
-
 }
 .form__ellipse:checked + .form__span {
   background-color: #000;
@@ -53,12 +51,12 @@ $pressed:#46058F;
   margin-left: 10px;
   position: relative;
   &:checked > .option-box {
-    color:$checkedCol;
+    color: $checkedCol;
   }
 }
 .checkmark_checked {
   color: $checkedCol;
-  transition-duration: .3s;
+  //transition-duration: .3s;
 }
 .small-span {
   display: inline-block;
@@ -66,11 +64,9 @@ $pressed:#46058F;
   width: 20px;
   height: 20px;
   border-radius: 3px;
-  border: 2px solid #CBCBCB;
-
+  border: 2px solid #cbcbcb;
 
   &:active {
-    border: 2px solid #46058F;
+    border: 2px solid #46058f;
   }
 }
-
