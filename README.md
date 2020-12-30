@@ -10,4 +10,6 @@
 
 ### Ссылка на демо на Github Page:https://vitalybibik.github.io/CyberHackathon
 
-T
+## ToDO:
+
+### Проект заморожен, на будущее необходимо написать функционал
