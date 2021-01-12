@@ -1,0 +1,38 @@
+$btnColor: #5d09bb;
+$btnStopColor: #eb5757;
+$btnW: 580px;
+$btnH: 60px;
+$tColor: #fff;
+.button {
+  width: $btnW;
+  height: $btnH;
+  color: $tColor;
+  background: $btnColor;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 119px;
+
+  &__text {
+    text-align: center;
+  }
+  &__icon {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+  }
+  &_color_red {
+    background-color: $btnStopColor;
+  }
+  &:hover {
+    background-color: #881eff;
+  }
+  :active {
+    background-color: #46058f;
+  }
+}

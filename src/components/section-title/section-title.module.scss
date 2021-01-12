@@ -1,0 +1,20 @@
+$maxWh: 550px;
+$main-color: #a6a6a6;
+$Text-color: #333;
+$Main-Font: Euclid Circular B;
+
+.section-title {
+  font-family: sans-serif, $Main-Font;
+  font-size: 85px;
+  line-height: 80px;
+  font-weight: 600;
+  color: $Text-color;
+  margin: 0;
+}
+
+@media screen and (max-width: $maxWh) {
+  .section-title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}

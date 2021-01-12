@@ -1,0 +1,22 @@
+$font-stack: Inter, Helvetica, Arial, sans-serif;
+$maxW: 724px;
+
+.app {
+  position: relative;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0 auto;
+  z-index: 0;
+}
+.page {
+  margin: 0 auto;
+  max-width: 1440px;
+  &__container {
+    padding-top: 120px;
+    position: relative;
+    z-index: 2;
+    max-width: $maxW;
+    margin: 0 auto;
+  }
+}
